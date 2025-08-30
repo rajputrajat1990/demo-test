@@ -1,0 +1,29 @@
+# Artifacts and logs
+artifacts/
+
+# External cloned repos
+.external/
+
+# OS/editor cruft
+.DS_Store
+*.swp
+*.swo
+
+# Node, Python, Terraform typicals (future phases)
+node_modules/
+.venv/
+__pycache__/
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate*
+.external/keygen-*
+
+# Docker
+*.local
+*.log
+
+# Secrets (ensure managed via CI/CD)
+*.secret
+*.secrets.json
+configs/*-secrets*.json
+configs/kafka-secrets.local.json

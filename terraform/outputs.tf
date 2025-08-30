@@ -1,0 +1,1 @@
+# Outputs are defined in main.tf for simplicity in this small module.

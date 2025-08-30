@@ -1,0 +1,39 @@
+{
+  "environment_id": "env-33g8y2",
+  "cluster_id": "lkc-1q8dk6",
+  "kafka_bootstrap_endpoint": "SASL_SSL://pkc-921jm.us-east-2.aws.confluent.cloud:9092",
+  "http_endpoint": "https://pkc-921jm.us-east-2.aws.confluent.cloud:443",
+  "region": "us-east-2",
+  "topics_config": [
+    {
+      "name": "source_topic",
+      "partitions": 6,
+      "replication_factor": 3,
+      "config": {
+        "cleanup.policy": "delete",
+        "retention.ms": 604800000
+      }
+    },
+    {
+      "name": "flink_input_topic",
+      "partitions": 6,
+      "replication_factor": 3,
+      "config": {}
+    },
+    {
+      "name": "flink_output_topic",
+      "partitions": 6,
+      "replication_factor": 3,
+      "config": {}
+    },
+    {
+      "name": "sink_topic",
+      "partitions": 6,
+      "replication_factor": 3,
+      "config": {}
+    }
+  ],
+  "service_accounts": [],
+  "rbac": [],
+  "acls": []
+}
